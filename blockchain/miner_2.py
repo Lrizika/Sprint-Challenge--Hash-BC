@@ -110,7 +110,19 @@ if __name__ == '__main__':
 			if data.get('message') == 'New Block Forged':
 				coins_mined += 1
 				print("Total coins mined: " + str(coins_mined))
-				old_proof = new_proof
+				while True:
+					old_proof = new_proof
+					new_proof = proof_of_work(old_proof)
+					post_data = {
+						"proof": new_proof,
+						"id": id
+					}
+					for i in range(3):
+						print("Posting new coin")
+						try:
+							requests.post(url=node + "/mine", json=post_data, timeout=1.0)
+						except requests.exceptions.ReadTimeout:
+							pass
 			else:
 				print(data.get('message'))
 				print(data)
