@@ -121,8 +121,10 @@ if __name__ == '__main__':
 						print("Posting new coin")
 						try:
 							requests.post(url=node + "/mine", json=post_data, timeout=1.0)
-						except requests.exceptions.ReadTimeout:
+						except Exception as e:
 							pass
+					coins_mined += 1
+					print("Total coins mined: " + str(coins_mined))
 			else:
 				print(data.get('message'))
 				print(data)
