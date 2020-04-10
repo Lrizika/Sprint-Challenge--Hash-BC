@@ -117,10 +117,10 @@ if __name__ == '__main__':
 						"proof": new_proof,
 						"id": id
 					}
-					for i in range(3):
+					for i in range(2):
 						print("Posting new coin")
 						try:
-							requests.post(url=node + "/mine", json=post_data, timeout=1.0)
+							requests.post(url=node + "/mine", json=post_data, timeout=2.0)
 						except Exception as e:
 							pass
 					coins_mined += 1
