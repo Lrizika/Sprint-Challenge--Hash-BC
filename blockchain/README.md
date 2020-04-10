@@ -1,16 +1,16 @@
 # Blockchain Sprint Challenge
 
-Welcome to the ground floor!  Satoshi Brian is giving you the chance to be the first people to mine Lambda Coins.  However, you'll have to compete with your fellow students to cash in.  
+Welcome to the ground floor!  Satoshi Brian is giving you the chance to be the first people to mine Lambda Coins.  However, you'll have to compete with your fellow students to cash in.
 
-Your task is to use your knowledge to write a mining program, similar to the ones you have been working with, to mine coins for the Lambda Blockchain.  
+Your task is to use your knowledge to write a mining program, similar to the ones you have been working with, to mine coins for the Lambda Blockchain.
 
 The Lambda blockchain server works the similar to the demos this week, _but it uses a DIFFERENT Proof of Work Algorithm._
 
 Multi-Ouroboros of Work Algorithm
-    - Find a number p' such that the last five digits of hash(p) are equal
-    to the first five digits of hash(p')
-    - IE:  last_hash: ...AE912345, new hash 12345BA8...
-    - p is the previous proof, and p' is the new proof
+	- Find a number p' such that the last five digits of hash(p) are equal
+	to the first five digits of hash(p')
+	- IE:  last_hash: ...AE912345, new hash 12345BA8...
+	- p is the previous proof, and p' is the new proof
 
 Some things to keep in mind:
 * With everyone mining at once, it may take a long time to actually mine a coin on the main server. _You will lose the contest most of the time!_
@@ -31,10 +31,10 @@ API Endpoints:
 POST - Submit your name and a proposed proof for validation.  If the action is unsuccessful, you will receive an error message.  If successful, it will return:
 
 {
-    'index': block.index,
-    'transactions': str(block.transactions),
-    'proof': block.proof,
-    'previous_hash': block.previous_hash,
+	'index': block.index,
+	'transactions': str(block.transactions),
+	'proof': block.proof,
+	'previous_hash': block.previous_hash,
 }
 
 Failure:

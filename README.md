@@ -27,7 +27,7 @@ Explain in detail the workings of a dynamic array:
 * What is the worse case scenario if you try to extend the storage size of a dynamic array?
 
 Explain how a blockchain is structured. What are the blocks, what is the chain? How is the data organized?
- 
+
 Explain how proof of work functions. How does it operate. How does this protect the chain from attack. What kind of attack is possible?
 
 ## Project Set Up
@@ -44,7 +44,7 @@ A hash table implementation has been included for you already. Your task is to g
 
 For the blockchain portion of the challenge, you will be writing code for a new miner that will solve a different Proof of Work algorithm than the one we have been working with.
 
-Your goal is to mine at least 16 coins.  Keep in mind that with many people competing over the same coins, this may take a long time.  By our math, we expect that an average solution should be the first to find a solution at least 20 times in an hour or two of mining.  
+Your goal is to mine at least 16 coins.  Keep in mind that with many people competing over the same coins, this may take a long time.  By our math, we expect that an average solution should be the first to find a solution at least 20 times in an hour or two of mining.
 
 ## Minimum Viable Product
 
@@ -55,13 +55,13 @@ Your goal is to mine at least 16 coins.  Keep in mind that with many people comp
 
 ### Rubric
 
-| *OBJECTIVE*                                                                                                     | *TASK*             | *1 - DOES NOT MEET EXPECTATIONS*                                                                                            | *2 - MEETS EXPECTATIONS*                                                                                                       | *3 - EXCEEDS EXPECTATIONS                                                                                                                             |
+| *OBJECTIVE*																									 | *TASK*			 | *1 - DOES NOT MEET EXPECTATIONS*																							| *2 - MEETS EXPECTATIONS*																									   | *3 - EXCEEDS EXPECTATIONS																															 |
 |-----------------------------------------------------------------------------------------------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| implement and describe how high-level array functions work down to the memory level                             | Interview Question | The student fully explains two or fewer of the bulleted items in the solution repo\. | The student fully explains at least 3 of the items in the bulleted list\.                                | The student fully explains 4 or more items from the bulleted list\.           |
-| implement and utilize basic hash table + handle collisions and resizing in a hash table                         | Hash Problem 1 & 2 | Tests do not pass on one or both problems, or solutions do not use hash tables.                                             | Tests pass on both problems.  Solution utilizes a hash table.                                                                  | Tests pass on on both problems with solutions utilizing hash tables, linear runtime complexity, no flake8 complaints.                                 |
-| diagram and code a simple blockchain, utilizing a cryptographic hash                                            | Interview Question | The student fully explains two or fewer of the bulleted items in the solution repo\. | The student fully explains at least 3 of the items in the bulleted list\.                                | The student fully explains 4 or more items from the bulleted list\.           |
-| utilize a Proof of Work process to protect a blockchain from attack                                             | Blockchain Problem | The student is unable to mine at least 16 coins before the end of lunch.                                                               | The student was able to mine at least 16 coins before the end of lunch.                                                                   | The student presented a unique solution that was able to mine more than 1000 coins before the end of lunch.                                            |
-| build a protocol to allow nodes in a blockchain network to communicate to share blocks and determine consensus. | Interview Question | The student fully explains two or fewer of the bulleted items in the solution repo\. | The student fully explains at least 3 of the items in the bulleted list\.                                | The student fully explains 4 or more items from the bulleted list\.           |
+| implement and describe how high-level array functions work down to the memory level							 | Interview Question | The student fully explains two or fewer of the bulleted items in the solution repo\. | The student fully explains at least 3 of the items in the bulleted list\.								| The student fully explains 4 or more items from the bulleted list\.		   |
+| implement and utilize basic hash table + handle collisions and resizing in a hash table						 | Hash Problem 1 & 2 | Tests do not pass on one or both problems, or solutions do not use hash tables.											 | Tests pass on both problems.  Solution utilizes a hash table.																  | Tests pass on on both problems with solutions utilizing hash tables, linear runtime complexity, no flake8 complaints.								 |
+| diagram and code a simple blockchain, utilizing a cryptographic hash											| Interview Question | The student fully explains two or fewer of the bulleted items in the solution repo\. | The student fully explains at least 3 of the items in the bulleted list\.								| The student fully explains 4 or more items from the bulleted list\.		   |
+| utilize a Proof of Work process to protect a blockchain from attack											 | Blockchain Problem | The student is unable to mine at least 16 coins before the end of lunch.															   | The student was able to mine at least 16 coins before the end of lunch.																   | The student presented a unique solution that was able to mine more than 1000 coins before the end of lunch.											|
+| build a protocol to allow nodes in a blockchain network to communicate to share blocks and determine consensus. | Interview Question | The student fully explains two or fewer of the bulleted items in the solution repo\. | The student fully explains at least 3 of the items in the bulleted list\.								| The student fully explains 4 or more items from the bulleted list\.		   |
 
 ## Grading
 The grade for this sprint challenge is the average of the number of points received (points/15)
